@@ -63,5 +63,7 @@ const navItems = shallowRef([
   border-radius: 24px 24px 0 0;
   padding: 8px 0;
   overflow: hidden;
+
+  z-index: 3;
 }
 </style>
