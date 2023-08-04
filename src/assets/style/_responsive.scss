@@ -1,0 +1,47 @@
+/**
+  Десктоп маленький
+ */
+@mixin xl {
+  @media screen and (max-width: $media-xl-1) {
+    @content;
+  }
+}
+
+/**
+  Планшет горизонтальный
+ */
+@mixin lg {
+  @media screen and (max-width: $media-lg-1) {
+    @content;
+  }
+}
+
+/**
+  Планшет вертикальный
+ */
+@mixin md {
+  @media screen and (max-width: $media-md-1) {
+    @content;
+  }
+}
+
+/**
+  Мобильные устройства
+ */
+@mixin sm {
+  @media screen and (max-width: $media-sm-1) {
+    @content;
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+
+  @include lg {
+    width: 100vw;
+    margin: 0;
+    padding: 0 16px 150px 16px;
+  }
+}
